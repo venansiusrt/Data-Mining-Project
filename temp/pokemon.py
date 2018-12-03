@@ -15,3 +15,12 @@ pokemon_mod = pokemon.fillna(" ")
 
 print(pokemon_mod.head)
 
+
+def reality():
+    reality()
+
+if this == real_life or this == fantasy: 
+    try:
+        escape(reality())
+    except CaughtLandslide:
+        reality()
