@@ -25,4 +25,7 @@ https://github.com/eriklindernoren/ML-From-Scratch
 - Laporan ipnyb
 
 # Reference 
-https://www.analyticsindiamag.com/7-types-classification-algorithms/
+https://www.kaggle.com/rcfreitas/python-ml-breast-cancer-diagnostic-data-set
+
+
+https://github.com/Jean-njoroge/Breast-cancer-risk-prediction
