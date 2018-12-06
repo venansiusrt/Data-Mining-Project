@@ -32,10 +32,6 @@ print(dataset.columns)
 sns.pairplot(dataset, hue='class' ,vars = ['clump_thickness', 'unif_cell_size','unif_cell_shape', 'marg_adhesion'])
 plt.show()
 
-print(dataset['class'].value_counts() +  '\n\n\n')
-
-
-
 # Feature Scaling
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
