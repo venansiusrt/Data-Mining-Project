@@ -18,14 +18,15 @@ https://github.com/eriklindernoren/ML-From-Scratch
     - [x] [SVM](https://github.com/nalamidi/Breast-Cancer-Classification-with-Support-Vector-Machine/blob/master/Breast%20Cancer%20Classification.ipynb)
     - [ ] Random Forest
 - Clustering 
-    - [ ] K means
-    - [ ] SpectralClustering
-    - [ ] Hierarchical Clustering
+    - [x] K means
+    - [x] SpectralClustering
+    - [x] Hierarchical Clustering
 - Sequence Pattern
     - [x] Cari library
     - [ ] Prefix Span 
     - [ ] Generalized Sequence Pattern 
-- Laporan ipnyb
+- [ ] Laporan ipnyb
+- [ ] Exploratory Data Analysis
 
 # Reference 
 https://www.kaggle.com/rcfreitas/python-ml-breast-cancer-diagnostic-data-set
