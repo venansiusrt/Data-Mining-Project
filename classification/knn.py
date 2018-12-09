@@ -7,7 +7,7 @@ import pandas as pd
 dataset = pd.read_csv('breast-cancer-wisconsin.data')
 dataset.replace('?', -99999, inplace=True) #-9999 biar outlier, gak masuk ke grafik 
 X = dataset.iloc[:, 1:11].values # 11 karena ada class
-y = dataset.iloc[:, 10].values # 10 karena tidak ada kelas 
+y = dataset.iloc[:, 10].values # 10 karena tidak ada id 
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
