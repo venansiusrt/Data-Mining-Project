@@ -15,7 +15,7 @@ https://github.com/eriklindernoren/ML-From-Scratch
 - [ ] bikin time measurement per algoritma
 - Classification 
     - [x] KNN
-    - [x] (SVM)[https://github.com/nalamidi/Breast-Cancer-Classification-with-Support-Vector-Machine/blob/master/Breast%20Cancer%20Classification.ipynb]
+    - [x] [SVM](https://github.com/nalamidi/Breast-Cancer-Classification-with-Support-Vector-Machine/blob/master/Breast%20Cancer%20Classification.ipynb)
     - [ ] Random Forest
 - Clustering 
     - [ ] K means
