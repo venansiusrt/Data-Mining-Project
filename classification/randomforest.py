@@ -2,6 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from sklearn.model_selection import train_test_split, cross_val_score
 
 # Importing the dataset
 dataset = pd.read_csv('breast-cancer-wisconsin.data')
@@ -19,4 +20,18 @@ sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
-print(X_test)
+# Feature Scaling
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X_train = sc.fit_transform(X_train)
+X_test = sc.transform(X_test)
+
+# Importing the model:
+from sklearn.ensemble import RandomForestClassifier
+
+
+# Initiating the model:
+lr = RandomForestClassifier()
+
+scores = cross_val_score(lr, X_train, y_train, scoring='accuracy' ,cv=10).mean()
+print("The mean accuracy with 10 fold cross validation is %s" % round(scores*100,2))

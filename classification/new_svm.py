@@ -43,31 +43,6 @@ print("Test Accuracy: ", accuracy)
 accuracy = svc.score(X_train, y_train)
 print("Train Accuracy: ", accuracy)
 
-
-# from matplotlib.colors import ListedColormap
-# cmap_light = ListedColormap(['#AAFFAA','#FFAAAA'])
-# cmap_bold = ListedColormap(['#0000FF','#FF0000'])
-
-# # creating a meshgrid
-# x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
-# y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
-# h=0.05
-# xx, yy = np.meshgrid(np.arange(x_min, x_max, h),np.arange(y_min, y_max, h))
-# xy_mesh=np.c_[xx.ravel(), yy.ravel()]
-# Z = svc.predict(xy_mesh)
-# Z = Z.reshape(xx.shape)
-
-# #plotting data on decision boundary
-
-# plt.figure()
-# plt.pcolormesh(xx, yy, Z, cmap=cmap_light)
-# plt.scatter(X[:, 0], X[:, 1], c=y, cmap=cmap_bold)
-# plt.xlim(xx.min(), xx.max())
-# plt.ylim(yy.min(), yy.max())
-# plt.xlabel('PC1');plt.ylabel('PC2')
-# plt.title('SVC')
-# plt.show()
-
 from matplotlib.colors import ListedColormap
 X_set, y_set = X_train, y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),

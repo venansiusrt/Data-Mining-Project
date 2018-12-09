@@ -1,14 +1,16 @@
 # Classification 
 menentukan kanker benign(pasif) / malign(aktif) terhadap umur dan gaji 
 menggunakan f1 score untuk menentukan "nilai" klasifikasi
-- k nearest neighbor (knn.py)
-Test Accuracy:  0.9785714285714285
+- k nearest neighbor (knn.py)   
+Test Accuracy:  0.9785714285714285   
 Train Accuracy:  0.9856887298747764 
   ![](https://i.imgur.com/zTZITgJ.png)   
   ![](https://i.imgur.com/yH2bD0A.png)
-- SVM 
-Test Accuracy:  0.9714285714285714
+- SVM    
+Test Accuracy:  0.97142   
 Train Accuracy:  0.9588550983899821
+  ![](https://i.imgur.com/gIdQRhH.png)
+  ![](https://i.imgur.com/SuJHThb.png)
 - Random Forest
 
 ## Dataset 
