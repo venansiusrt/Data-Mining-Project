@@ -176,7 +176,7 @@ class NeuralNetwork:
         data_size = self.input_data.shape[0]
         training_rows = int(data_size * .8)
         test_rows = data_size - training_rows
-
+        list_of_error = []
         # One epoch goes once through the entire training set
         for current_epoch in range(epochs):
             # Shuffle the training data for better training accuracy
@@ -204,8 +204,13 @@ class NeuralNetwork:
             self.errors.append(sum(epoch_errors) / float(len(epoch_errors)))
 
             # Lekker data's naar de console sturen voor de gebuiker
+            list_of_error.append(self.errors[-1])
             print(
                 "Epoch {:d}/{:d} - error: {:f}".format(current_epoch + 1, epochs, self.errors[-1]))
+        print("minimal error: {:f}".format(min(list_of_error)))
+        epoch_ke = list_of_error.index(min(list_of_error)) + 1
+        print("at epoch: {:d}".format(epoch_ke))
+
 
         if plot:
             plt.plot(self.errors)
@@ -213,4 +218,4 @@ class NeuralNetwork:
 
 
 if __name__ == '__main__':
-    NeuralNetwork().train(100000, True)
+    NeuralNetwork().train(1000, True)
