@@ -5,6 +5,7 @@ from matplotlib import pyplot as plt
 from sklearn.decomposition import PCA
 import seaborn as sns
 from sklearn.linear_model import LogisticRegression
+<<<<<<< HEAD
 from sklearn.model_selection import train_test_split, GridSearchCV
 
 dataset = pd.read_csv('breast-cancer-wisconsin.data', index_col=0)
@@ -16,10 +17,15 @@ print('\n')
 print(y.head())
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20)
+=======
+from sklearn.cross_validation import cross_val_score
+from sklearn.grid_search import GridSearchCV
+>>>>>>> 0fc446e06dd306a20a1ffb438a4857220de6f5a1
 
 lgr = LogisticRegression()
 
 
+<<<<<<< HEAD
 
 # standardizing and PCA
 scaler = StandardScaler()
@@ -47,3 +53,13 @@ sns.plt.show()
 #     grid_lgr.fit(X_train,y_train)
 #     print(grid_lgr.best_params_)
 #     print(np.round(grid_lgr.best_score_,3))
+=======
+param_grid = {'C': [0.001, 0.01, 0.1, 1, 10, 100, 1000] }
+scores = ['accuracy', 'recall']
+for sc in scores:
+    grid_lgr=GridSearchCV(lgr,param_grid,cv=10,scoring=sc,n_jobs=-1)
+    print("# Tuning hyper-parameters for %s" % sc)
+    grid_lgr.fit(X_train,y_train)
+    print(grid_lgr.best_params_)
+    print(np.round(grid_lgr.best_score_,3))
+>>>>>>> 0fc446e06dd306a20a1ffb438a4857220de6f5a1
