@@ -18,10 +18,10 @@ https://github.com/eriklindernoren/ML-From-Scratch
     - [x] (SVM)[https://github.com/nalamidi/Breast-Cancer-Classification-with-Support-Vector-Machine/blob/master/Breast%20Cancer%20Classification.ipynb]
     - [ ] Random Forest
 - Clustering 
-    - [ ] k means
-    - [ ] dbscan 
-    - [ ] MeanShift
-- Sequence Pattern 
+    - [ ] K means
+    - [ ] SpectralClustering
+    - [ ] Hierarchical Clustering
+- Sequence Pattern
     - [x] Cari library
     - [ ] Prefix Span 
     - [ ] Generalized Sequence Pattern 
