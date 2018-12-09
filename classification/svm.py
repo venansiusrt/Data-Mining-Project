@@ -66,6 +66,10 @@ svc_model = SVC()
 
 print(svc_model.fit(X_train, y_train))
 y_predict = svc_model.predict(X_test)
+score = svc_model.score(X_test, y_test)
+print("Test Accuracy: ", score)
+score = svc_model.score(X_train, y_train)
+print("Train Accuracy: ", score)
 
 
 # visuaslisai preidksi menggunakan svm dengan confusion matrix 

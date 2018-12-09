@@ -39,9 +39,9 @@ cm = confusion_matrix(y_test, y_pred)
 
 # Checking Accuracy
 accuracy = classifier.score(X_test, y_test)
-print("test: ", accuracy)
+print("Test Accuracy: ", accuracy)
 accuracy = classifier.score(X_train, y_train)
-print("train", accuracy)
+print("Train Accuracy: ", accuracy)
 
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap

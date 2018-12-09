@@ -33,3 +33,9 @@ https://www.kaggle.com/rcfreitas/python-ml-breast-cancer-diagnostic-data-set
 
 
 https://github.com/Jean-njoroge/Breast-cancer-risk-prediction
+
+#### Multi Layer Perceptron 
+- 100000 Epoch 
+![](https://i.imgur.com/fLBWWKL.png)
+minimal error: 0.003965
+at epoch: 77508
