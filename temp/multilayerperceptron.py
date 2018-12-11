@@ -218,4 +218,4 @@ class NeuralNetwork:
 
 
 if __name__ == '__main__':
-    NeuralNetwork().train(1000, True)
+    NeuralNetwork().train(100000, True)
