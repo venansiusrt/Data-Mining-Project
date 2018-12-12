@@ -1,6 +1,6 @@
 # Tugas Besar Data Mining 
 ## Dipelajari
-- Classificaiton 
+- Classification 
 - Clustering 
 - Sequence Pattern 
 ## Latar Terbelakang
