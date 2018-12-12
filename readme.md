@@ -16,7 +16,7 @@ https://github.com/eriklindernoren/ML-From-Scratch
 - Classification 
     - [x] KNN
     - [x] [SVM](https://github.com/nalamidi/Breast-Cancer-Classification-with-Support-Vector-Machine/blob/master/Breast%20Cancer%20Classification.ipynb)
-    - [ ] Random Forest
+    - [x] Random Forest
 - Clustering 
     - [x] K means
     - [x] SpectralClustering
@@ -27,6 +27,7 @@ https://github.com/eriklindernoren/ML-From-Scratch
     - [ ] Generalized Sequence Pattern 
 - [ ] Laporan ipnyb
 - [ ] Exploratory Data Analysis
+- [ ] Performance Analysis per algoritma
 
 # Reference 
 https://www.kaggle.com/rcfreitas/python-ml-breast-cancer-diagnostic-data-set
@@ -35,7 +36,7 @@ https://www.kaggle.com/rcfreitas/python-ml-breast-cancer-diagnostic-data-set
 https://github.com/Jean-njoroge/Breast-cancer-risk-prediction
 
 #### Multi Layer Perceptron 
-Jadi biar lebih seru, urutan dari x_train dan x_Test di shuffle pake sklearn.utils.shuffle. Lalu dibandingkan dengan data asli
+Jadi biar lebih seru, urutan dari `x_train` dan `x_Test` di shuffle pake `sklearn.utils.shuffle`. Lalu dibandingkan dengan data asli
 - 19 Epoch, 4 Layer (memakai adam optimiser, backprop)
 ![](https://i.imgur.com/segumWO.png)
 31 23 17 13 (input_nodes: train_X.shape, hidden_nodes1: input_nodes, hidden_nodes2, hidden_nodes3)    
