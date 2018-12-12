@@ -9,11 +9,6 @@ datasets.replace('?', -9999, inplace=True)
 X = datasets.iloc[:, 2:4].values
 Y = datasets.iloc[:, 10].values
 
-
-# datasets = pd.read_csv('Social_Network_Ads.csv')
-# X = datasets.iloc[:, [2,3]].values
-# Y = datasets.iloc[:, 4].values
-
 print(X)
 
 print("\n", Y)
